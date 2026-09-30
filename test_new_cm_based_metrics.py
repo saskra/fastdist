@@ -1,6 +1,15 @@
 # Author: Dr. Sascha D. Krauss
-# Contact: sascha.krauss@uk-essen.de
+# Contact: sascha.krauss@rub.de
 # Start date: 2022-02-17
+#
+# Setup (from the repo root):
+#   python3 -m venv .venv
+#   .venv/bin/pip install -r requirements.txt
+#   .venv/bin/python test_new_cm_based_metrics.py
+# requirements.txt installs the checked-out fork in editable mode (-e .), so
+# run this with the `restore-cm-mean-metrics` branch checked out - the
+# `benchmarks` branch carries master's library code without the cm/mean-metric
+# functions this script tests.
 
 import json
 import os
