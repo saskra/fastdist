@@ -160,6 +160,7 @@ def main():
 		stop = timeit.default_timer()
 		duration1 = stop - start
 		print('Time fastdist: ', duration1)
+		start = timeit.default_timer()
 		cm2 = metrics.confusion_matrix(y_true, y_pred)
 		stop = timeit.default_timer()
 		duration2 = stop - start
